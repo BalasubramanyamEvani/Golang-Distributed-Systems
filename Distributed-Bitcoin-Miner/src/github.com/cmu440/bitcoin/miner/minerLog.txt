@@ -1,0 +1,1 @@
+18:53:59.985219 miner.go:48: sent join message to server

@@ -1,0 +1,54 @@
+=== TestLocalSyncBasic1: 2 actors: Put on one actor, Get on all
+PASS
+ok  	github.com/cmu440/tests	1.844s
+=== TestLocalSyncBasic2: 2 actors: Put on all actors concurrently (distinct keys), Get on all
+PASS
+ok  	github.com/cmu440/tests	1.680s
+=== TestLocalSyncBasic3: 4 actors: Put on one actor, Get on all
+PASS
+ok  	github.com/cmu440/tests	1.656s
+=== TestLocalSyncBasic4: 4 actors: Put on all actors concurrently (distinct keys), Get on all
+PASS
+ok  	github.com/cmu440/tests	1.681s
+=== TestLocalSyncFrequency1: 2 actors: Put on one actor, Get on all w/ frequency limit
+PASS
+ok  	github.com/cmu440/tests	4.926s
+=== TestLocalSyncFrequency2: 2 actors: Put on all actors concurrently (distinct keys), Get on all w/ frequency limit
+PASS
+ok  	github.com/cmu440/tests	4.931s
+=== TestLocalSyncFrequency3: 4 actors: Put on one actor, Get on all w/ frequency limit
+PASS
+ok  	github.com/cmu440/tests	4.910s
+=== TestLocalSyncFrequency4: 4 actors: Put on all actors concurrently (distinct keys), Get on all w/ frequency limit
+PASS
+ok  	github.com/cmu440/tests	4.967s
+=== TestLocalSyncSize1: 2 actors: Put on one actor, Get on all w/ size increase limit
+PASS
+ok  	github.com/cmu440/tests	4.412s
+=== TestLocalSyncSize2: 2 actors: Put on two actors concurrently (distinct keys), Get on all w/ size increase limit
+PASS
+ok  	github.com/cmu440/tests	4.832s
+=== TestLocalSyncSize3: 4 actors: Put on one actor, Get on all w/ size increase limit
+PASS
+ok  	github.com/cmu440/tests	4.391s
+=== TestLocalSyncSize4: 4 actors: Put on all actors concurrently (distinct keys), Get on all w/ size increase limit
+PASS
+ok  	github.com/cmu440/tests	4.364s
+=== TestLocalSyncLWW1: 4 actors: Put on two actors with small offset (<< sync interval), verify LWW
+PASS
+ok  	github.com/cmu440/tests	1.686s
+=== TestLocalSyncLWW2: 4 actors: Put on two actors concurrently, then causally overwrite on one
+PASS
+ok  	github.com/cmu440/tests	2.221s
+=== TestLocalSyncLWW3: 4 actors: Put on two actors concurrently, then causally overwrite on a third
+PASS
+ok  	github.com/cmu440/tests	2.273s
+=== TestLocalSyncLWW4: 4 actors: Check that a re-Put of the *same* value gets a new timestamp
+PASS
+ok  	github.com/cmu440/tests	1.695s
+=== TestLocalSyncStress1: 2 actors x 4 clients: stress test
+PASS
+ok  	github.com/cmu440/tests	3.342s
+=== TestLocalSyncStress2: 4 actors x 4 clients: stress test
+PASS
+ok  	github.com/cmu440/tests	3.268s
